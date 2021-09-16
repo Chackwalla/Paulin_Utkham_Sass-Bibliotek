@@ -1,0 +1,23 @@
+#First{
+    margin: 0;
+    background-image: url("https://media.discordapp.net/attachments/714782809482461197/756633475666280448/fantasy_tempel_orig.png"); /* The image used */
+    background-color: #9291f7; /* Used if the image is unavailable */
+    height: 990px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: 2; /* Do not repeat the image */
+    background-size: cover;
+}
+
+h1{
+    margin: 50px;
+}
+
+#smol{
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 618px;
+    border-color: #ac80ff7a;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 30px;
+}
