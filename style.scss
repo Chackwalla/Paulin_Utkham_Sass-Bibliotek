@@ -2,6 +2,33 @@
     align-items: flex-end;
     display: flex;
 }
+@mixin font($size, $family, $color) {
+    font-size: $size;
+    font-family: $family;
+    color: $color;
+    
+}
+
+@mixin Background($url, $color) {
+    background-image: url($url); /* The image used */
+    background-color: $color; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: 2; /* Do not repeat the image */
+    background-size: cover;
+}
+
+body{
+    margin: 0px;
+}
+
+#FirstPage{
+    @include Background("https://androspel.com/wp-content/uploads/2021/08/Genshin-Impact-Kokomi-1.jpg", aqua);
+}
+
+#SecoundPage{
+    @include Background("https://i2.wp.com/thefree2playway.com/wp-content/uploads/2021/05/genshin-impact-beidou-build.jpg?fit=652%2C360&ssl=1", violet);
+}
 
 .Page{
     width: 99vw;
@@ -10,10 +37,15 @@
 .HeadTitle{
     width: 100%;
     height: 25vh;
+
+    .header{
+        @include font(32px, lobster, black);
+    }
 }
 
 .PageCont{
-    height: 75vh;
+    height: 74vh;
+    
 
     .Text{
         @include flexBottom();
@@ -22,9 +54,18 @@
         height: 100%;
     }
 
+    #Kokomi{
+        @include font(21px, TimesNewRoman, black);
+    }
+
+    #Beidou{
+        @include font(21px, TimesNewRoman, rgb(139, 49, 180));
+    }
+
+
     .SidePic{
         @include flexBottom();
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
     
@@ -36,56 +77,3 @@
         }
     }
 }
-
-// .Text{
-//     display: flex;
-//     align-items: flex-end;
-//     float: left;
-//     width: 70%;
-//     height: 100%;
-// }
-
-// .SidePic{
-//     float: left;
-//     width: 30%;
-//     height: 100%;
-//     align-items: flex-end;
-//     display: flex;
-// }
-
-// #Pic{
-//     max-width: 100%;
-//     max-height: 100%;
-//     align-items: flex-end;
-// }
-
-
-
-
-
-
-/*
-#First{
-    margin: 0;
-    background-image: url("https://media.discordapp.net/attachments/714782809482461197/756633475666280448/fantasy_tempel_orig.png"); /* The image used /
-    background-color: #9291f7; /* Used if the image is unavailable /
-    height: 990px; /* You must set a specified height /
-    background-position: center; /* Center the image /
-    background-repeat: 2; /* Do not repeat the image /
-    background-size: cover;
-}
-
-h1{
-    margin: 50px;
-}
-
-#smol{
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 618px;
-    border-color: #ac80ff7a;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 30px;
-}
-*/

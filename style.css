@@ -1,3 +1,35 @@
+body {
+  margin: 0px;
+}
+
+#FirstPage {
+  background-image: url("https://androspel.com/wp-content/uploads/2021/08/Genshin-Impact-Kokomi-1.jpg");
+  /* The image used */
+  background-color: aqua;
+  /* Used if the image is unavailable */
+  height: 100vh;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: 2;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
+#SecoundPage {
+  background-image: url("https://i2.wp.com/thefree2playway.com/wp-content/uploads/2021/05/genshin-impact-beidou-build.jpg?fit=652%2C360&ssl=1");
+  /* The image used */
+  background-color: violet;
+  /* Used if the image is unavailable */
+  height: 100vh;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: 2;
+  /* Do not repeat the image */
+  background-size: cover;
+}
+
 .Page {
   width: 99vw;
 }
@@ -7,8 +39,14 @@
   height: 25vh;
 }
 
+.HeadTitle .header {
+  font-size: 32px;
+  font-family: lobster;
+  color: black;
+}
+
 .PageCont {
-  height: 75vh;
+  height: 74vh;
 }
 
 .PageCont .Text {
@@ -23,6 +61,18 @@
   height: 100%;
 }
 
+.PageCont #Kokomi {
+  font-size: 21px;
+  font-family: TimesNewRoman;
+  color: black;
+}
+
+.PageCont #Beidou {
+  font-size: 21px;
+  font-family: TimesNewRoman;
+  color: #8b31b4;
+}
+
 .PageCont .SidePic {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -30,7 +80,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  float: left;
+  float: right;
   width: 30%;
   height: 100%;
 }
@@ -39,30 +89,4 @@
   max-width: 100%;
   max-height: 100%;
 }
-
-/*
-#First{
-    margin: 0;
-    background-image: url("https://media.discordapp.net/attachments/714782809482461197/756633475666280448/fantasy_tempel_orig.png"); /* The image used /
-    background-color: #9291f7; /* Used if the image is unavailable /
-    height: 990px; /* You must set a specified height /
-    background-position: center; /* Center the image /
-    background-repeat: 2; /* Do not repeat the image /
-    background-size: cover;
-}
-
-h1{
-    margin: 50px;
-}
-
-#smol{
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 618px;
-    border-color: #ac80ff7a;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 30px;
-}
-*/
 /*# sourceMappingURL=style.css.map */
